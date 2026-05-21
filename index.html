@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rr Drogaria LTDA</title>
+    <meta property="og:title" content="Rr Drogaria LTDA">
+    <meta property="og:description" content="Cuidando de você com excelência e dedicação.">
+    <meta property="og:image" content="http://rrdrogaria.com.br/img/1.jpg">
+    <meta property="og:url" content="http://rrdrogaria.com.br/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111827',
+                        secondary: '#eab308',
+                        accent: '#16a34a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative bg-slate-50 text-slate-800 font-sans antialiased">
+    <div class="fixed inset-0 z-[-1] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-100 via-slate-50 to-green-50 opacity-70"></div>
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-transform duration-300 bg-white/40 backdrop-blur-md border-b border-white/50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary tracking-tight">RR <span class="text-secondary">DROGARIA</span></a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-slate-700 hover:text-secondary font-medium transition-colors">Início</a>
+                    <a href="#sobre" class="text-slate-700 hover:text-secondary font-medium transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="text-slate-700 hover:text-secondary font-medium transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-slate-700 hover:text-secondary font-medium transition-colors">Galeria</a>
+                    <a href="#contato" class="text-slate-700 hover:text-secondary font-medium transition-colors">Contato</a>
+                    <a href="https://wa.me/5511996941141" target="_blank" class="flex items-center gap-2 bg-accent hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-800 hover:text-secondary focus:outline-none p-2">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-lg border-t border-white/50 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col items-center">
+                <a href="#inicio" class="block px-3 py-2 text-lg font-medium text-slate-800">Início</a>
+                <a href="#sobre" class="block px-3 py-2 text-lg font-medium text-slate-800">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 text-lg font-medium text-slate-800">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 text-lg font-medium text-slate-800">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 text-lg font-medium text-slate-800">Contato</a>
+                <a href="https://wa.me/5511996941141" target="_blank" class="flex items-center gap-2 mt-4 bg-accent text-white px-6 py-3 rounded-full font-semibold shadow-md">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Fazer Pedido
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0">
+            <img src="img/1.jpeg" alt="Fachada Rr Drogaria" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-primary/70"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg tracking-tight">RR <span class="text-secondary">DROGARIA</span></h1>
+            <p class="text-xl md:text-3xl text-gray-200 mb-10 font-light drop-shadow-md">Cuidando de você!</p>
+            <a href="https://wa.me/5511996941141" target="_blank" class="inline-flex items-center gap-3 bg-secondary hover:bg-yellow-400 text-primary px-8 py-4 rounded-full text-lg font-bold transition-all shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] transform hover:scale-105">
+                Faça seu Pedido
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="bg-white/40 backdrop-blur-xl border border-white/60 p-10 md:p-16 rounded-3xl shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8">Sobre Nós</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-8 rounded-full"></div>
+                <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
+                    A história do grupo RR Drogarias e Distribuidora começou há 15 anos, quando Marcos Antonio Monteiro (in memoriam) chamou seu filho Rafael Monteiro para comprar uma drogaria na Zona Oeste e serem sócios. Seu filho Rafael aceitou e, daí para a frente, foi uma história de muito crescimento. A empresa comprou mais uma loja e, depois de mais um tempo, tornou-se também distribuidora. Hoje, sob a direção total de Rafael Monteiro, a empresa possui 3 lojas físicas e uma distribuidora de medicamentos, com planos sólidos para expandir ainda mais sua rede de lojas físicas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Nossos Serviços</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/50 backdrop-blur-md border border-white/60 p-10 rounded-3xl shadow-xl text-center transform transition duration-300 hover:-translate-y-2 hover:bg-white/70">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Medicamentos</h3>
+                    <p class="text-slate-600">Ampla variedade de medicamentos de referência, genéricos e similares com os melhores preços.</p>
+                </div>
+
+                <div class="bg-white/50 backdrop-blur-md border border-white/60 p-10 rounded-3xl shadow-xl text-center transform transition duration-300 hover:-translate-y-2 hover:bg-white/70">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Perfumaria e Higiene</h3>
+                    <p class="text-slate-600">Linha completa de cosméticos, produtos de beleza, perfumaria e itens de higiene pessoal.</p>
+                </div>
+
+                <div class="bg-white/50 backdrop-blur-md border border-white/60 p-10 rounded-3xl shadow-xl text-center transform transition duration-300 hover:-translate-y-2 hover:bg-white/70">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Atendimento Especializado</h3>
+                    <p class="text-slate-600">Equipe qualificada para orientar e garantir a melhor experiência de compra e cuidado com sua saúde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 relative bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Nossa Estrutura</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div class="group overflow-hidden rounded-2xl shadow-lg h-72">
+                    <img src="img/1.jpeg" alt="Fachada 1" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg h-72">
+                    <img src="img/2.jpeg" alt="Fachada 2" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg h-72">
+                    <img src="img/3.jpeg" alt="Interior 1" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg h-72">
+                    <img src="img/4.jpeg" alt="Interior 2" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg h-72">
+                    <img src="img/5.jpeg" alt="Interior 3" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg h-72">
+                    <img src="img/6.jpeg" alt="Interior 4" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Contato e Localização</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white/60 backdrop-blur-lg border border-white/80 p-8 md:p-12 rounded-3xl shadow-xl flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-primary mb-8 border-b border-gray-200 pb-4">Informações da Loja</h3>
+                    <ul class="space-y-6 text-lg text-slate-700">
+                        <li class="flex items-start gap-4">
+                            <span class="font-bold min-w-[120px] text-primary">Razão Social:</span> 
+                            <span>RR DROGARIA LTDA</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="font-bold min-w-[120px] text-primary">CNPJ:</span> 
+                            <span>59.218.397/0001-35</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="font-bold min-w-[120px] text-primary">Endereço:</span> 
+                            <span>Av. Corifeu de Azevedo Marques, 5579<br>Vila Lageado<br>São Paulo - SP<br>CEP: 05.339-005</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="font-bold min-w-[120px] text-primary">Telefone:</span> 
+                            <a href="https://wa.me/5511996941141" target="_blank" class="text-accent font-semibold hover:underline">(11) 99694-1141</a>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="font-bold min-w-[120px] text-primary">E-mail:</span> 
+                            <a href="mailto:DANIEL.SEGMENTO@GMAIL.COM" class="text-accent font-semibold hover:underline break-all">DANIEL.SEGMENTO@GMAIL.COM</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-xl border border-white/60 bg-white/30 backdrop-blur-sm">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.04257125301!2d-46.76295628448375!3d-23.56689898468007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55c2f0f4b8f5%3A0x9d0c2e391b1d8f5!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%205579%20-%20Vila%20Lageado%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-005!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white pt-16 pb-8 border-t-4 border-secondary">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h4 class="text-2xl font-bold mb-4 tracking-wider">RR DROGARIA LTDA</h4>
+            <p class="text-gray-400 mb-2">CNPJ: 59.218.397/0001-35</p>
+            <p class="text-gray-400 mb-8">Matriz - São Paulo, SP</p>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <button id="open-modal" class="text-gray-300 hover:text-secondary transition-colors underline">Política de Privacidade</button>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500 text-sm">&copy; <span id="year"></span> RR Drogaria LTDA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-primary/80 backdrop-blur-sm" id="modal-overlay"></div>
+        <div class="relative w-full max-w-2xl bg-white/90 backdrop-blur-xl border border-white p-8 rounded-3xl shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-2xl font-bold text-primary">Política de Privacidade</h2>
+                <button id="close-modal" class="text-gray-500 hover:text-red-500 transition-colors p-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="text-slate-700 space-y-4 text-sm leading-relaxed">
+                <p>A RR Drogaria LTDA valoriza a privacidade de seus clientes e usuários. Esta política descreve como lidamos com as informações em nosso site institucional.</p>
+                <p><strong>1. Coleta de Dados:</strong> Nosso site possui caráter meramente institucional e informativo. Não utilizamos formulários de coleta de dados pessoais, cadastro de usuários ou cookies de rastreamento invasivos para publicidade direcionada.</p>
+                <p><strong>2. Uso das Informações:</strong> Ao clicar no botão de WhatsApp, você será redirecionado para o aplicativo de mensagens, onde os dados fornecidos por você voluntariamente serão utilizados exclusivamente para o atendimento e processamento do seu pedido ou dúvida.</p>
+                <p><strong>3. Compartilhamento:</strong> A RR Drogaria LTDA não vende, aluga ou compartilha seus dados pessoais com terceiros.</p>
+                <p><strong>4. Segurança:</strong> Adotamos medidas de segurança para proteger o site, mas lembramos que nenhum método de transmissão na Internet é 100% seguro.</p>
+                <p><strong>5. Contato:</strong> Para dúvidas relacionadas à privacidade, contate-nos através do e-mail listado na seção de contato.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button id="close-modal-btn" class="bg-primary text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-colors">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
